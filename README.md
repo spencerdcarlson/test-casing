@@ -65,5 +65,5 @@ git pull
 # * [new branch]      bug/bar    -> origin/bug/bar
 
 ```
-Regardless of how many times that `git pull` is executed the output claims that the branch "bug/bar" is new because on my local machine the ref is "Bug/bar" which is not an exact match with "bug/bar". My local ref is able to sync with the remote repository. so there is no issue there, but this is problamatic when there are hundreds of case mismatching error messages in a repository.
+Regardless of how many times that `git pull` is executed the output claims that the branch "bug/bar" is _new_ because on my local machine the ref "Bug/bar"  is not an exact match with "bug/bar". My local ref is able to sync with the remote repository, so there is no issue there, but this is problamatic when there are hundreds of case mismatching error messages in a repository.
 
