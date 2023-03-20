@@ -20,7 +20,7 @@ libc info: no libc information available
 $SHELL (typically, interactive shell): /usr/local/Cellar/bash/5.2.15/bin/bash
 ```
 
-## Recreate The Problem 
+## Recreating the "Problem"
 This example creates two branches `Bug/foo` and `bug/bar` in a remote repository and demonstrates how `git` will always output that `bug/bar` is a new branch when it is not.
 
 ```bash
