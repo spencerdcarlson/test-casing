@@ -1,5 +1,27 @@
 # test-casing
-Test git case sensitivity
+Test git case sensitivity issue.
+This is to demonstrate how `git` will continuisly calim that some branches are always _new_ despite the local repository actually containing an in sync ref 
+when there is a case mismatch issue.
+
+## System Info
+```
+[System Info]
+git version:
+git version 2.37.1 (Apple Git-137.1)
+cpu: x86_64
+no commit associated with this build
+sizeof-long: 8
+sizeof-size_t: 8
+shell-path: /bin/sh
+feature: fsmonitor--daemon
+uname: Darwin 22.3.0 Darwin Kernel Version 22.3.0: Mon Jan 30 20:42:11 PST 2023; root:xnu-8792.81.3~2/RELEASE_X86_64 x86_64
+compiler info: clang: 14.0.0 (clang-1400.0.29.202)
+libc info: no libc information available
+$SHELL (typically, interactive shell): /usr/local/Cellar/bash/5.2.15/bin/bash
+```
+
+## Recreate The Problem 
+This example creates two branches `Bug/foo` and `bug/bar` in a remote repository and demonstrates how `git` will always output that `bug/bar` is a new branch when it is not.
 
 ```bash
 # Create a new repository
